@@ -19,6 +19,7 @@
     bottom: -10px;
     right: 130px;
   }
+
   .text {
     @include grid(46% 46%, 6%);
     align-items: center;
@@ -35,7 +36,7 @@
       }
     }
 
-    .miniText {
+    .rhs {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
@@ -53,7 +54,143 @@
         color: $primaryWhite;
         line-height: 28px;
         font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.sectionOne {
+  background-color: $secondarySacramentoGreen;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  .pattern_three {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .wrapper {
+    padding: 0 130px;
+
+    .line {
+      background-color: $primaryCoral;
+      width: 50px;
+      height: 4px;
+      margin: 0 0 10vh 0;
+    }
+
+    .text {
+      @include grid(46% 46%, 6%);
+      align-items: center;
+
+      .lhs {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        h2 {
+          color: $primaryWhite;
+          line-height: 48px;
+          font-size: 48px;
+          margin: 0;
+        }
+      }
+
+      .rhs {
+        .item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 3vh;
+
+          img {
+            margin-right: 20px;
+            width: 50px;
+          }
+
+          .content {
+            .title {
+              color: $primaryCoral;
+              font-style: normal;
+              font-weight: bold;
+              line-height: 28px;
+              font-size: 16px;
+              margin: 5px 0 0;
+            }
+
+            .description {
+              color: $primaryWhite;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 25px;
+              mix-blend-mode: normal;
+              opacity: 0.8;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sectionTwo {
+  background-color: $secondaryDeepGreen;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  &_wrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 130px;
+    display: flex;
+  }
+
+  h2 {
+    color: $primaryWhite;
+    text-align: center;
+    line-height: 48px;
+    font-size: 48px;
+    width: 820px;
+    margin: 0;
+
+    span {
+      color: $secondaryLightBlue;
+    }
+  }
+
+  .testimonials {
+    @include grid(30% 30% 30%, 3%);
+    margin-top: 8vh;
+
+    .testimonial,
+    .clientInfo {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .clientInfo {
+      .name {
+        color: $secondaryLightBlue;
+        font-style: normal;
+        font-weight: bold;
         font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        margin: 0;
       }
     }
   }
