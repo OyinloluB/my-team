@@ -1,0 +1,60 @@
+@import "./base-styles.scss/variables.scss";
+@import "./base-styles.scss/mixins.scss";
+
+.hero {
+  background-color: $primaryGreen;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 84vh;
+
+  .pattern {
+    position: absolute;
+    left: -130px;
+  }
+
+  .pattern_two {
+    position: absolute;
+    bottom: -10px;
+    right: 130px;
+  }
+  .text {
+    @include grid(46% 46%, 6%);
+    align-items: center;
+    padding: 0 130px;
+
+    h1 {
+      color: $primaryWhite;
+      line-height: 100px;
+      font-size: 100px;
+      margin: 0;
+
+      span {
+        color: $primaryCoral;
+      }
+    }
+
+    .miniText {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      .line {
+        background-color: $primaryCoral;
+        width: 50px;
+        height: 4px;
+        margin: 0;
+      }
+
+      p {
+        color: $primaryWhite;
+        line-height: 28px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+}

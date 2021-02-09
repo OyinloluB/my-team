@@ -1,0 +1,31 @@
+@import "./base-styles.scss/variables.scss";
+@import "./base-styles.scss/mixins.scss";
+
+.container {
+  background-color: $primaryGreen;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vh 130px 4vh;
+  display: flex;
+  height: 6vh;
+
+  ul {
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: $primaryWhite;
+      line-height: 28px;
+      font-weight: 600;
+      list-style: none;
+      font-size: 18px;
+      padding: 0 20px;
+    }
+
+    img {
+      padding-right: 50px;
+    }
+  }
+}
