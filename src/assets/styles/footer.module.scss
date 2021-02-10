@@ -1,0 +1,92 @@
+@import "../styles/base-styles.scss/variables.scss";
+@import "../styles/base-styles.scss/mixins.scss";
+
+.footer {
+  background-color: $secondaryDarkGreen;
+}
+
+.wrapper {
+  padding: 50px 130px;
+  @include grid(60% 30%, 10%);
+
+  .rhs {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+
+    .socials {
+      img {
+        width: 18px;
+      }
+    }
+
+    span {
+      mix-blend-mode: normal;
+      color: $primaryWhite;
+      font-style: normal;
+      text-align: right;
+      line-height: 25px;
+      font-weight: 600;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+  }
+
+  .lhs {
+    display: flex;
+    align-items: flex-start;
+
+    .logo {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-right: 100px;
+      display: flex;
+      height: 100%;
+
+      img {
+        width: 150px;
+      }
+
+      ul {
+        align-items: center;
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        li {
+          list-style: none;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: $primaryWhite;
+            font-style: normal;
+            line-height: 28px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+          }
+
+          &:nth-child(1) {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+
+    .address {
+      p {
+        mix-blend-mode: normal;
+        color: $primaryWhite;
+        line-height: 25px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        opacity: 0.6;
+        margin: 0;
+      }
+    }
+  }
+}

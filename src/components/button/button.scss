@@ -1,0 +1,44 @@
+@import "../../assets/styles/base-styles.scss/variables.scss";
+
+button {
+  background-color: transparent;
+  border-radius: 25px;
+  line-height: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 20px;
+  padding: 10px;
+  width: 120px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.white {
+  border: 2px solid $primaryWhite;
+  color: $primaryWhite;
+
+  &:hover {
+    background-color: $primaryWhite;
+    border: 2px solid $primaryWhite;
+    color: $secondaryDarkGreen;
+  }
+}
+
+.colored {
+  border: 2px solid $secondarySacramentoGreen;
+  color: $secondarySacramentoGreen;
+
+  &:hover {
+    background-color: $secondarySacramentoGreen;
+    border: 2px solid $secondarySacramentoGreen;
+    color: $primaryWhite;
+  }
+}
+
+.filled {
+  background-color: $primaryWhite;
+  border: 2px solid $primaryWhite;
+  color: $secondaryDarkGreen;
+}

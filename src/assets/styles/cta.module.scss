@@ -1,0 +1,28 @@
+@import "../styles/base-styles.scss/variables.scss";
+@import "../styles/base-styles.scss/mixins.scss";
+
+.container {
+  background-color: $primaryCoral;
+  position: relative;
+}
+
+.pattern {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+}
+
+.wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+  display: flex;
+
+  h2 {
+    color: $secondarySacramentoGreen;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 48px;
+  }
+}

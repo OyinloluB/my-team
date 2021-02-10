@@ -4,12 +4,17 @@ import styles from "../assets/styles/home.module.scss";
 import patternOne from "../assets/images/bg-pattern-home-1.svg";
 import patternTwo from "../assets/images/bg-pattern-home-2.svg";
 import patternThree from "../assets/images/bg-pattern-home-3.svg";
+import patternFour from "../assets/images//bg-pattern-home-4-about-3.svg";
+import patternFive from "../assets/images/bg-pattern-home-5.svg";
 
 import person from "../assets/images/icon-person.svg";
 import setting from "../assets/images/icon-cog.svg";
 import chart from "../assets/images/icon-chart.svg";
 
 import quote from "../assets/images/quote.svg";
+import profileOne from "../assets/images/avatar-kady.jpg";
+import profileTwo from "../assets/images/avatar-aiysha.jpg";
+import profileThree from "../assets/images/avatar-arthur.jpg";
 
 const Home = () => {
   return (
@@ -75,6 +80,8 @@ const Home = () => {
         </div>
       </section>
       <section className={styles.sectionTwo}>
+        <img src={patternFour} alt="/" className={styles.pattern_four} />
+        <img src={patternFive} alt="/" className={styles.pattern_five} />
         <div className={styles.sectionTwo_wrapper}>
           <h2>
             Delivering real results for top companies. Some of our{" "}
@@ -82,15 +89,52 @@ const Home = () => {
           </h2>
           <div className={styles.testimonials}>
             <div className={styles.testimonial}>
-              <img src={quote} alt="quote" className={styles.quote} />
-              <p>
-                “The team perfectly fit the specialized skill set required. They
-                focused on the most essential features helping us launch the
-                platform eight months faster than planned.”
-              </p>
+              <div className={styles.reviewWrapper}>
+                <img src={quote} alt="quote" className={styles.quote} />
+                <p className={styles.review}>
+                  “The team perfectly fit the specialized skill set required.
+                  They focused on the most essential features helping us launch
+                  the platform eight months faster than planned.”
+                </p>
+              </div>
               <div className={styles.clientInfo}>
                 <p className={styles.name}>Kady Baker</p>
                 <p className={styles.job}>Product Manager at Bookmark</p>
+                <img src={profileOne} alt="kady" className={styles.client} />
+              </div>
+            </div>
+            <div className={styles.testimonial}>
+              <div className={styles.reviewWrapper}>
+                <img src={quote} alt="quote" className={styles.quote} />
+                <p className={styles.review}>
+                  “We needed to automate our entire onboarding process. The team
+                  came in and built out the whole journey. Since going live,
+                  user retention has gone through the roof!”
+                </p>
+              </div>
+              <div className={styles.clientInfo}>
+                <p className={styles.name}>Aiysha Reese</p>
+                <p className={styles.job}>Founder of Manage</p>
+                <img src={profileTwo} alt="aiysha" className={styles.client} />
+              </div>
+            </div>
+            <div className={styles.testimonial}>
+              <div className={styles.reviewWrapper}>
+                <img src={quote} alt="quote" className={styles.quote} />
+                <p className={styles.review}>
+                  “Amazing. Our team helped us build an app that delivered a new
+                  experience for hiring a physio. The launch was an instant
+                  success with 100k downloads in the first month.”
+                </p>
+              </div>
+              <div className={styles.clientInfo}>
+                <p className={styles.name}>Arthur Clarke</p>
+                <p className={styles.job}>Co-founder of MyPhysio</p>
+                <img
+                  src={profileThree}
+                  alt="arthur"
+                  className={styles.client}
+                />
               </div>
             </div>
           </div>

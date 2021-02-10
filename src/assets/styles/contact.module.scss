@@ -1,0 +1,109 @@
+@import "../styles/base-styles.scss/variables.scss";
+@import "../styles/base-styles.scss/mixins.scss";
+
+.contact {
+  background-color: $primaryGreen;
+  position: relative;
+  height: 84vh;
+
+  .pattern_two {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.wrapper {
+  @include grid(45% 45%, 10%);
+  align-items: center;
+  padding: 10vh 180px;
+  position: relative;
+
+  .pattern {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+  }
+
+  .lhs {
+    h1 {
+      color: $primaryWhite;
+      font-style: normal;
+      line-height: 100px;
+      font-weight: bold;
+      font-size: 56px;
+      margin: 0;
+    }
+
+    h2 {
+      color: $primaryCoral;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 30px;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .list {
+      margin-top: 5vh;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3vh;
+
+        img {
+          margin-right: 20px;
+          width: 50px;
+        }
+
+        .content {
+          .description {
+            font-style: normal;
+            font-weight: bold;
+            line-height: 28px;
+            color: #ffffff;
+            font-size: 16px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .rhs {
+    form {
+      input,
+      textarea {
+        border-bottom: 1px solid $primaryWhite;
+        background: transparent;
+        color: $primaryWhite;
+        margin-bottom: 2vh;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        height: 50px;
+        width: 100%;
+
+        &::placeholder {
+          letter-spacing: -0.115385px;
+          mix-blend-mode: normal;
+          color: $primaryWhite;
+          font-style: normal;
+          line-height: 25px;
+          font-weight: 400;
+          font-size: 14px;
+          opacity: 0.6;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        height: 80px;
+      }
+    }
+  }
+}

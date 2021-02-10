@@ -1,0 +1,191 @@
+@import "./base-styles.scss/variables.scss";
+@import "./base-styles.scss/mixins.scss";
+
+.hero {
+  background-color: $primaryGreen;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 64vh;
+
+  .pattern {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .wrapper {
+    @include grid(36% 56%, 6%);
+    align-items: center;
+    padding: 0 130px;
+
+    h1 {
+      color: $primaryWhite;
+      line-height: 100px;
+      font-size: 64px;
+      margin: 0;
+    }
+
+    .rhs {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+
+      .line {
+        background-color: $primaryCoral;
+        width: 50px;
+        height: 4px;
+        margin: 0 0 15px;
+      }
+
+      p {
+        color: $primaryWhite;
+        line-height: 28px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.directors {
+  background-color: $secondaryDeepGreen;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+
+  .pattern_two {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .pattern_three {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  h2 {
+    color: $primaryWhite;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 48px;
+  }
+
+  &_wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 130px 150px;
+    display: flex;
+  }
+
+  .team {
+    @include grid(31% 31% 31%, 3.3%);
+    row-gap: 10vh;
+
+    .director {
+      background-color: $secondarySacramentoGreen;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      display: flex;
+      padding: 20px 0 50px;
+
+      .profile {
+        border: 3px solid $secondaryLightBlue;
+        border-radius: 100%;
+        margin-bottom: 2vh;
+        height: 55px;
+        width: 55px;
+      }
+
+      .info {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
+        p {
+          color: $secondaryLightBlue;
+          font-style: normal;
+          text-align: center;
+          font-weight: bold;
+          line-height: 28px;
+          font-size: 14px;
+          margin: 0;
+        }
+
+        span {
+          color: $primaryWhite;
+          font-style: italic;
+          text-align: center;
+          line-height: 25px;
+          font-weight: 500;
+          font-size: 13px;
+        }
+      }
+
+      .plus {
+        background-color: $primaryCoral;
+        justify-content: center;
+        border-radius: 100%;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        bottom: -20px;
+        padding: 8px;
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+          background-color: $secondaryLightBlue;
+        }
+      }
+    }
+  }
+}
+
+.clients {
+  background-color: $secondarySacramentoGreen;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+
+  .pattern_four {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &_wrapper {
+    padding: 100px 130px;
+
+    h2 {
+      color: $primaryWhite;
+      font-style: normal;
+      text-align: center;
+      font-weight: bold;
+      line-height: 48px;
+      font-size: 48px;
+    }
+
+    .logos {
+      @include grid(15% 15% 15% 15% 15%, 5%);
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

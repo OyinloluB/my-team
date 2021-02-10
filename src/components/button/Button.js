@@ -1,10 +1,18 @@
 import React from "react";
-import "./button.module.scss";
+import { useHistory } from "react-router";
+import "./button.scss";
 
-const Button = ({ text }) => {
+const Button = ({ text, type, route }) => {
+  const history = useHistory();
+
   return (
     <div>
-      <button>{text}</button>
+      <button
+        className={`${type}`}
+        onClick={() => route && history.push(`${route}`)}
+      >
+        {text}
+      </button>
     </div>
   );
 };
