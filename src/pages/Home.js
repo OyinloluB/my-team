@@ -71,7 +71,7 @@ const Home = () => {
                   <p className={styles.title}>Enhanced Productivity</p>
                   <p className={styles.description}>
                     Our customized platform with in-built analytics helps you
-                    manage your distributed teams.
+                    manage your distributed teams..
                   </p>
                 </div>
               </div>
