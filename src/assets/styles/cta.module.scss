@@ -10,6 +10,10 @@
   position: absolute;
   left: -20px;
   bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -17,6 +21,16 @@
   align-items: center;
   padding: 30px 200px;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 100px;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 30px;
+    text-align: center;
+    flex-direction: column;
+  }
 
   h2 {
     color: $secondarySacramentoGreen;

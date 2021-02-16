@@ -22,6 +22,15 @@ const Footer = () => {
                 <Link to="/about">about</Link>
               </li>
             </ul>
+            <div className={styles.socials}>
+              <img src={facebook} alt="facebook" />
+              <img
+                src={pinterest}
+                alt="pinterest"
+                style={{ margin: "0 15px" }}
+              />
+              <img src={twitter} alt="twitter" />
+            </div>
           </div>
           <div className={styles.address}>
             <p>987 Hillcrest Lane</p>
@@ -35,6 +44,12 @@ const Footer = () => {
             <img src={facebook} alt="facebook" />
             <img src={pinterest} alt="pinterest" style={{ margin: "0 15px" }} />
             <img src={twitter} alt="twitter" />
+          </div>
+          <div className={styles.addressTab}>
+            <p>987 Hillcrest Lane</p>
+            <p>Irvine, CA</p>
+            <p>California 92714</p>
+            <p>Call Us : 949-833-7432</p>
           </div>
           <span>Copyright 2020. All Rights Reserved</span>
         </div>
