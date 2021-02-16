@@ -6,10 +6,18 @@
   position: relative;
   height: 84vh;
 
+  @media screen and (max-width: 768px) {
+    height: unset;
+  }
+
   .pattern_two {
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @media screen and (max-width: 420px) {
+      display: none;
+    }
   }
 }
 
@@ -19,13 +27,35 @@
   padding: 10vh 180px;
   position: relative;
 
+  @media screen and (max-width: 768px) {
+    @include grid(100%, null);
+    padding: 5vh 120px 10vh;
+  }
+
+  @media screen and (max-width: 420px) {
+    @include grid(100%, null);
+    padding: 5vh 30px 10vh;
+  }
+
   .pattern {
     position: absolute;
     top: 20vh;
     left: 0;
+
+    @media screen and (max-width: 768px) {
+      top: 5vh;
+    }
+
+    @media screen and (max-width: 420px) {
+      display: none;
+    }
   }
 
   .lhs {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5vh;
+    }
+
     h1 {
       color: $primaryWhite;
       font-style: normal;
@@ -33,6 +63,10 @@
       font-weight: bold;
       font-size: 56px;
       margin: 0;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     h2 {
@@ -42,6 +76,10 @@
       line-height: 30px;
       font-size: 28px;
       margin: 0;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     .list {

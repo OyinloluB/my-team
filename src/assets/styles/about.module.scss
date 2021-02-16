@@ -10,10 +10,18 @@
   display: flex;
   height: 64vh;
 
+  @media screen and (max-width: 420px) {
+    height: 90vh;
+  }
+
   .pattern {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media screen and (max-width: 420px) {
+      width: 80px;
+    }
   }
 
   .wrapper {
@@ -69,6 +77,10 @@
         line-height: 28px;
         font-weight: 600;
         font-size: 18px;
+
+        @media screen and (max-width: 420px) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -85,6 +97,10 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    @media screen and (max-width: 420px) {
+      width: 50px;
+    }
   }
 
   .pattern_three {
@@ -100,6 +116,11 @@
     font-weight: bold;
     line-height: 48px;
     font-size: 48px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 
   &_wrapper {
@@ -111,6 +132,10 @@
     @media screen and (max-width: 768px) {
       padding: 100px 100px 150px;
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 100px 30px 150px;
+    }
   }
 
   .team {
@@ -120,6 +145,10 @@
     @media screen and (max-width: 768px) {
       @include grid(45% 45%, 10%);
       row-gap: 5vh;
+    }
+
+    @media screen and (max-width: 420px) {
+      @include grid(100%, null);
     }
 
     .director {
@@ -196,6 +225,10 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    @media screen and (max-width: 420px) {
+      width: 100px;
+    }
   }
 
   &_wrapper {
@@ -205,6 +238,10 @@
       padding: 150px 50px;
     }
 
+    @media screen and (max-width: 420px) {
+      padding: 100px 30px 80px;
+    }
+
     h2 {
       color: $primaryWhite;
       font-style: normal;
@@ -212,14 +249,32 @@
       font-weight: bold;
       line-height: 48px;
       font-size: 48px;
+
+      @media screen and (max-width: 420px) {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 8vh;
+      }
     }
 
     .logos {
       @include grid(15% 15% 15% 15% 15%, 5%);
       align-items: center;
 
+      @media screen and (max-width: 420px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       img {
         width: 100%;
+
+        @media screen and (max-width: 420px) {
+          width: 150px;
+          margin-bottom: 8vh;
+        }
       }
     }
   }

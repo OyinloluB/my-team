@@ -59,4 +59,65 @@
       display: flex;
     }
   }
+
+  .menu {
+    background-color: $secondaryDarkBlue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 60%;
+    height: 105vh;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+      from {
+        margin-right: 0%;
+        width: 0%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 60%;
+      }
+    }
+
+    &_wrapper {
+      padding: 50px 40px;
+    }
+
+    .pattern {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .closeMenu {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding: 15px 0;
+
+        a {
+          text-decoration: none;
+          color: $primaryWhite;
+          line-height: 28px;
+          font-weight: 600;
+          font-size: 18px;
+
+          &:hover {
+            color: $primaryCoral;
+          }
+        }
+      }
+    }
+  }
 }
